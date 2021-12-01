@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+:root {
+  --background: #e3d2bc;
+  --text: #111111;
+}
+
+body {
+  background: url('images/fundo-wallpaper.svg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+header {
+  padding: 5rem 20rem 5rem 20rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.company-riot a + a {
+  margin-left: 2rem;
+}
+
+.company-riot {
+  margin-bottom: 2rem;
+}
+
+.img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.arcane {
+  display: flex;
+  justify-content: right;
+  padding-top: 15.9rem;
+}
+
+.arcane img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.arcane-league-of-legends img:hover {
+  transform: scale(1.1);
+}
+
+.arcane-league-of-legends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arcane-league-of-legends .link-trailer {
+  min-width: 50%;
+  height: 5rem;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+}
+
+.arcane-league-of-legends .link-trailer {
+  color: var(--text);
+}
+
+.jinx-arcane {
+  position: relative;
+  top: 8rem;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.background {
+  background-color: var(--background);
+  opacity: 0.2;
+
+  width: 100%;
+  height: 11.1rem;
+}
+
+.last-episode {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: var(--background);
+
+  width: 100%;
+  height: 18.7rem;
+
+  position: relative;
+  top: -1rem;
+  left: 17rem;
+}
+
+.date h1 {
+  font-size: 2rem;
+}
+
+.episode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('images/episodio.svg');
+  width: 23rem;
+  height: 15rem;
+
+  z-index: 2;
+
+  position: relative;
+  left: -15rem;
+  top: -0rem;
+}
+
+.episodio .play {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+@media (max-width: 1284px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jinx-arcane {
+    display: none;
+  }
+
+  .arcane {
+    margin: 18rem 5rem 18rem 5rem;
+  }
+}
+
+@media (max-width: 1109px) {
+  header {
+    padding: 5rem 1rem 5rem 2rem;
+  }
+}
+
+@media (max-width: 966px) {
+  footer {
+    background: var(--background);
+  }
+
+  .background {
+    display: none;
+  }
+
+  .last-episode {
+    top: 0rem;
+    left: -25rem;
+  }
+
+  .episode,
+  .last-episode {
+    display: flex;
+    flex-direction: column;
+    position: static;
+
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+}
